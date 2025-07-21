@@ -11,3 +11,4 @@ blis==0.7.11
 python-dotenv==1.0.1
 pdf2image==1.17.0
 pytesseract==0.3.13
+python-multipart==0.0.12
