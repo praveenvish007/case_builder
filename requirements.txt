@@ -8,4 +8,3 @@ pillow==11.3.0
 openai==1.97.0
 spacy==3.7.5
 blis==0.7.11
-en_core_web_sm==3.7.5
