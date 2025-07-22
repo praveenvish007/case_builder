@@ -1,7 +1,10 @@
 services:
   - type: web
-    name: your-service-name
-    env: python
-    pythonVersion: "3.11.9"
-    buildCommand: "pip install --only-binary :all: -r requirements.txt"
-    startCommand: "gunicorn -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:$PORT"
+    name: case_builder
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: apikey
+        sync: false
